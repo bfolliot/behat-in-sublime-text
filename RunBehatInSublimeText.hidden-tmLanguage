@@ -10,19 +10,43 @@
   <array>
     <dict>
       <key>comment</key>
-      <string>test pass</string>
+      <string>test passed</string>
       <key>match</key>
-      <string>\d+ passed</string>
+      <string>\d+ (passed|успешни|prošel|prošly|prošlo|bestanden|pasaron|succès|sikeres|superato|superati|個成功|통과|geslaagd|ok|udany|udane|udanych|passou|passaram|passou|cu succes|пройден|пройдено)</string>
       <key>name</key>
-      <string>test.pass</string>
+      <string>test.passed</string>
     </dict>
     <dict>
       <key>comment</key>
       <string>test failed</string>
       <key>match</key>
-      <string>\d+ failed</string>
+      <string>\d+ (failed|провалени|selhal|selhaly|selhalo|fehlgeschlagen|fallaron|échecs|sikertelen|fallito|falliti|個失敗|실패|gefaald|feilet|nieudany|nieudane|nieudanych|falhou|falharam|falhou|fara success|провален|провалено)</string>
       <key>name</key>
-      <string>test.fail</string>
+      <string>test.failed</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>test pending</string>
+      <key>match</key>
+      <string>\d+ (pending|изчакващи|čeká|čekají|čeká|ausstehend|pendientes|en attente|elintézendő|in sospeso|個保留|준비중|wachtende|ikke implementert|oczekujący|oczekujące|oczekujących|por definir|pendente|in așteptare|в ожидании)</string>
+      <key>name</key>
+      <string>test.pending</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>test undefined</string>
+      <key>match</key>
+      <string>\d+ (undefined|неопределени|nedefinován|nedefinovány|nedefinováno|nicht definiert|por definir|indéfinis|meghatározatlan|non definito|non definiti|個未定義|정의되지 않았습니다.|niet gedefinieerd|ikke definert|niezdefiniowany|niezdefiniowane|niezdefiniowanych|indefinido|indefinidos|fara implementare|не определен|не определено)</string>
+      <key>name</key>
+      <string>test.undefined</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>test skipped</string>
+      <key>match</key>
+      <string>\d+ (skipped|пропуснати|přeskočen|přeskočeny|přeskočeno|übersprungen|saltadas|ignorés|kihagyott|ignorato|ignorati|個スキップ|건너뜀|overgeslagen|hoppet over|pominięty|pominięte|pominiętych|omitido|omitidos|pulado|omis|omiși|пропущен|пропущено)</string>
+      <key>name</key>
+      <string>test.skipped</string>
     </dict>
   </array>
   <key>scopeName</key>

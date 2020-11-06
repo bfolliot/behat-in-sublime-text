@@ -27,7 +27,7 @@
 	      <key>name</key>
 	      <string>Test</string>
 	      <key>scope</key>
-	      <string>test.pass</string>
+	      <string>test.passed</string>
 	      <key>settings</key>
 	      <dict>
 	        <key>foreground</key>
@@ -38,11 +38,44 @@
 	      <key>name</key>
 	      <string>Test</string>
 	      <key>scope</key>
-	      <string>test.fail</string>
+	      <string>test.failed</string>
 	      <key>settings</key>
 	      <dict>
 	        <key>foreground</key>
 	        <string>#F92672</string>
+	      </dict>
+	    </dict>
+	    <dict>
+	      <key>name</key>
+	      <string>Test</string>
+	      <key>scope</key>
+	      <string>test.pending</string>
+	      <key>settings</key>
+	      <dict>
+	        <key>foreground</key>
+	        <string>#FFCC66</string>
+	      </dict>
+	    </dict>
+	    <dict>
+	      <key>name</key>
+	      <string>Test</string>
+	      <key>scope</key>
+	      <string>test.undefined</string>
+	      <key>settings</key>
+	      <dict>
+	        <key>foreground</key>
+	        <string>#FFCC66</string>
+	      </dict>
+	    </dict>
+	    <dict>
+	      <key>name</key>
+	      <string>Test</string>
+	      <key>scope</key>
+	      <string>test.skipped</string>
+	      <key>settings</key>
+	      <dict>
+	        <key>foreground</key>
+	        <string>#66D9EF</string>
 	      </dict>
 	    </dict>
 	</array>
