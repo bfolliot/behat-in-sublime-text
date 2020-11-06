@@ -1,11 +1,11 @@
 [
     {
-        "caption": "PHPUnit: Run",
-        "command": "simple_php_unit"
+        "caption": "Behat: Run",
+        "command": "run_behat_in_sublime_text"
     },
     {
-        "caption": "PHPUnit: Run with params",
-        "command": "simple_php_unit",
+        "caption": "Behat: Run with params",
+        "command": "run_behat_in_sublime_text",
         "args": {
             "params": true
         }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>RunBehatInSublimeText</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#002B36</string>
+				<key>caret</key>
+				<string>#839496</string>
+				<key>foreground</key>
+				<string>#839496</string>
+				<key>invisibles</key>
+				<string>#073642</string>
+				<key>lineHighlight</key>
+				<string>#073642</string>
+				<key>selection</key>
+				<string>#EEE8D5</string>
+			</dict>
+		</dict>
+	    <dict>
+	      <key>name</key>
+	      <string>Test</string>
+	      <key>scope</key>
+	      <string>test.pass</string>
+	      <key>settings</key>
+	      <dict>
+	        <key>foreground</key>
+	        <string>#A6E22E</string>
+	      </dict>
+	    </dict>
+	    <dict>
+	      <key>name</key>
+	      <string>Test</string>
+	      <key>scope</key>
+	      <string>test.fail</string>
+	      <key>settings</key>
+	      <dict>
+	        <key>foreground</key>
+	        <string>#F92672</string>
+	      </dict>
+	    </dict>
+	</array>
+	<key>uuid</key>
+	<string>323f3bc0-bd0f-498a-8d4c-895be1344472</string>
+</dict>
+</plist>

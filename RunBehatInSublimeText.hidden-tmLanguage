@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>bundleUUID</key>
+  <string>3b6731e1-5c53-4085-8e5b-68d7b0b13318</string>
+  <key>name</key>
+  <string>RunBehatInSublimeText</string>
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>comment</key>
+      <string>test pass</string>
+      <key>match</key>
+      <string>\d+ passed</string>
+      <key>name</key>
+      <string>test.pass</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>test failed</string>
+      <key>match</key>
+      <string>\d+ failed</string>
+      <key>name</key>
+      <string>test.fail</string>
+    </dict>
+  </array>
+  <key>scopeName</key>
+  <string>tests.php</string>
+  <key>uuid</key>
+  <string>eaab84cb-d208-4061-9309-a4569475e4ac</string>
+</dict>
+</plist>

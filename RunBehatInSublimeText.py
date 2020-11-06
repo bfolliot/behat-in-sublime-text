@@ -6,10 +6,10 @@ import sublime
 import sublime_plugin
 
 if sys.version_info < (3, 3):
-    raise RuntimeError('SimplePHPUnit works with Sublime Text 3 only')
+    raise RuntimeError('RunBehatInSublimeText works with Sublime Text 3 only')
 
-SPU_THEME = 'Packages/SimplePHPUnit/SimplePHPUnit.hidden-tmTheme'
-SPU_SYNTAX = 'Packages/SimplePHPUnit/SimplePHPUnit.hidden-tmLanguage'
+SPU_THEME = 'Packages/RunBehatInSublimeText/RunBehatInSublimeText.hidden-tmTheme'
+SPU_SYNTAX = 'Packages/RunBehatInSublimeText/RunBehatInSublimeText.hidden-tmLanguage'
 
 class ShowInPanel:
     def __init__(self, window):
@@ -22,27 +22,26 @@ class ShowInPanel:
         self.panel.settings().set("color_scheme", SPU_THEME)
         self.panel.set_syntax_file(SPU_SYNTAX)
 
-class SimplePhpUnitCommand(sublime_plugin.WindowCommand):
+class RunBehatInSublimeTextCommand(sublime_plugin.WindowCommand):
     def __init__(self, *args, **kwargs):
-        super(SimplePhpUnitCommand, self).__init__(*args, **kwargs)
-        settings = sublime.load_settings('SimplePHPUnit.sublime-settings')
-        self.phpunit_path = settings.get('phpunit_path')
+        super(RunBehatInSublimeTextCommand, self).__init__(*args, **kwargs)
+        settings = sublime.load_settings('RunBehatInSublimeText.sublime-settings')
+        self.behat_path = settings.get('behat_path')
 
     def run(self, *args, **kwargs):
         try:
-            # The first folder needs to be the Laravel Project
             self.PROJECT_PATH = self.window.folders()[0]
-            if os.path.isfile("%s" % os.path.join(self.PROJECT_PATH, 'phpunit.xml')) or os.path.isfile("%s" % os.path.join(self.PROJECT_PATH, 'phpunit.xml.dist')):
+            if os.path.isfile("%s" % os.path.join(self.PROJECT_PATH, 'behat.yml')) or os.path.isfile("%s" % os.path.join(self.PROJECT_PATH, 'config/behat.yml')):
                 self.params = kwargs.get('params', False)
-                self.args = [self.phpunit_path, '--stderr']
+                self.args = [self.behat_path, '--format=progress']
                 if self.params is True:
                     self.window.show_input_panel('Params:', '', self.on_params, None, None)
                 else:
                     self.on_done()
             else:
-                sublime.status_message("phpunit.xml or phpunit.xml.dist not found")
+                sublime.status_message("behat.yml or config/behat.yml not found")
         except IndexError:
-            sublime.status_message("Please open a project with PHPUnit")
+            sublime.status_message("Please open a project with Behat")
 
     def on_params(self, command):
         self.command = command

@@ -1,42 +1,34 @@
-Simple PHPUnit commands
+Run Behat in Sublime text
 ===============
 
-This plugin allows you the run the PHPUnit tests using the Sublime Text interface, without having to open and use the command line.
+This plugin allows you the run the Behat tests using the Sublime Text interface, without having to open and use the command line.
+
+It's a fork of [Simple PHPUnit](https://github.com/evgeny-golubev/SimplePHPUnit-for-Sublime-Text).
 
 ### Available commands:
 
-- `PHPUnit: Run`
-- `PHPUnit: Run with params`
-
-### Coloring output:
-
-![Coloring output](https://raw.github.com/m0nah/SimplePHPUnit-for-Sublime-Text/master/Screen%20Shot.png)
+- `Behat: Run`
+- `Behat: Run with params`
 
 ### Installation:
-Use Package Controller or create a the directory `SimplePHPUnit` in your Sublime Text Packages directory, and you're ready to go.
+
+Use Package Controller or clone this repository in your Sublime Text Packages directory, and you're ready to go.
 
 ### Usage:
-Press Cmd + Shift + P for the dropdown command list, search for `PHPUnit: `, and pick your command. Also you can use `Tools/PHPUnit...` menu item
+
+Press Cmd + Shift + P for the dropdown command list, search for `Behat: `, and pick your command. Also you can use `Tools/Behat...` menu item
 
 ### Keybinding:
 
-You can use command `simple_php_unit` for your keybinding.
+You can use command `run_behat_in_sublime_text` for your keybinding.
 
 Example:
 
 ```json
-{ "keys": ["super+ctrl+alt+t"], "command": "simple_php_unit" }
+{ "keys": ["super+ctrl+alt+t"], "command": "run_behat_in_sublime_text" }
 ```
 
 ### Notes:
-- PHPUnit config file needs to been in the root folder of your structure in the sidebar.
+
+- Behat config file needs to been in the root folder of your structure in the sidebar or in the a folder `config` in the root folder.
 - You need insert in Sublime Text user settings `"show_panel_on_build": true` or use `Tools/Build Results/Show Build Results` menu item for view results.
-
-### Donate:
-If you liked this plugin, you can donate to support it!
-
-[![Paypal donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SZ6YWJUGFM9J8)
-
-Give some feedback.
-
-Thanks.

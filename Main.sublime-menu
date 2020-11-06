@@ -5,9 +5,9 @@
         "children":
         [
             {
-                "caption": "PHPUnit...",
+                "caption": "Behat...",
                 "command": "show_overlay",
-                "args": {"overlay": "command_palette", "text": "PHPUnit: " }
+                "args": {"overlay": "command_palette", "text": "Behat: " }
             }
         ]
     },
@@ -24,17 +24,17 @@
                 "children":
                 [
                     {
-                        "caption": "SimplePHPUnit",
+                        "caption": "RunBehatInSublimeText",
                         "children":
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/SimplePHPUnit/SimplePHPUnit.sublime-settings"},
+                                "args": {"file": "${packages}/RunBehatInSublimeText/RunBehatInSublimeText.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/User/SimplePHPUnit.sublime-settings"},
+                                "args": {"file": "${packages}/User/RunBehatInSublimeText.sublime-settings"},
                                 "caption": "Settings – User"
                             }
                         ]
