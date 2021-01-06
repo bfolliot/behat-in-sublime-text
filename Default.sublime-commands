@@ -1,11 +1,11 @@
 [
     {
         "caption": "Behat: Run",
-        "command": "run_behat_in_sublime_text"
+        "command": "run_behat"
     },
     {
         "caption": "Behat: Run with params",
-        "command": "run_behat_in_sublime_text",
+        "command": "run_behat",
         "args": {
             "params": true
         }

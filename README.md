@@ -12,7 +12,7 @@ It's a fork of [Simple PHPUnit](https://github.com/evgeny-golubev/SimplePHPUnit-
 
 ### Installation:
 
-Use Package Controller or clone this repository in your Sublime Text Packages directory, and you're ready to go.
+Use Package Controller ("Run Behat") or clone this repository in your Sublime Text Packages directory, and you're ready to go.
 
 ### Usage:
 
@@ -20,12 +20,12 @@ Press Cmd + Shift + P for the dropdown command list, search for `Behat: `, and p
 
 ### Keybinding:
 
-You can use command `run_behat_in_sublime_text` for your keybinding.
+You can use command `run_behat` for your keybinding.
 
 Example:
 
 ```json
-{ "keys": ["super+ctrl+alt+t"], "command": "run_behat_in_sublime_text" }
+{ "keys": ["super+ctrl+alt+t"], "command": "run_behat" }
 ```
 
 ### Notes:

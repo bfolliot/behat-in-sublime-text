@@ -6,10 +6,10 @@ import sublime
 import sublime_plugin
 
 if sys.version_info < (3, 3):
-    raise RuntimeError('RunBehatInSublimeText works with Sublime Text 3 only')
+    raise RuntimeError('RunBehat works with Sublime Text 3 only')
 
-SPU_THEME = 'Packages/RunBehatInSublimeText/RunBehatInSublimeText.hidden-tmTheme'
-SPU_SYNTAX = 'Packages/RunBehatInSublimeText/RunBehatInSublimeText.hidden-tmLanguage'
+SPU_THEME = 'Packages/RunBehat/RunBehat.hidden-tmTheme'
+SPU_SYNTAX = 'Packages/RunBehat/RunBehat.hidden-tmLanguage'
 
 class ShowInPanel:
     def __init__(self, window):
@@ -22,10 +22,10 @@ class ShowInPanel:
         self.panel.settings().set("color_scheme", SPU_THEME)
         self.panel.set_syntax_file(SPU_SYNTAX)
 
-class RunBehatInSublimeTextCommand(sublime_plugin.WindowCommand):
+class RunBehatCommand(sublime_plugin.WindowCommand):
     def __init__(self, *args, **kwargs):
-        super(RunBehatInSublimeTextCommand, self).__init__(*args, **kwargs)
-        settings = sublime.load_settings('RunBehatInSublimeText.sublime-settings')
+        super(RunBehatCommand, self).__init__(*args, **kwargs)
+        settings = sublime.load_settings('RunBehat.sublime-settings')
         self.behat_path = settings.get('behat_path')
 
     def run(self, *args, **kwargs):

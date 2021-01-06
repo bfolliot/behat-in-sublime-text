@@ -1,4 +1,4 @@
 {
-  "syntax": "Packages/RunBehatInSublimeText/RunBehatInSublimeText.hidden-tmLanguage",
-  "color_scheme": "Packages/RunBehatInSublimeText/RunBehatInSublimeText.hidden-tmTheme"
+  "syntax": "Packages/RunBehat/RunBehat.hidden-tmLanguage",
+  "color_scheme": "Packages/RunBehat/RunBehat.hidden-tmTheme"
 }
